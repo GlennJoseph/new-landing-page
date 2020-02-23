@@ -1,9 +1,257 @@
-body {
+/* GENERAL */
+body, h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
 }
 
-.rowItem {
+@font-face {
+    font-family: 'Be Vietnam';
+    src: url(../../resources/fonts/be-vietnam/BeVietnam-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Be Vietnam Bold';
+    src: url(../../resources/fonts/be-vietnam/BeVietnam-Bold.ttf);
+}
+/* GENERAL */
+
+
+/* ROWS AND COLUMN - GENERAL */
+.colWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     max-width: 960px;
     margin: 0 auto;
 }
+
+.rowItem {
+    width: 100%;
+    padding: 40px 0;
+}
+/* ROWS AND COLUMN - GENERAL */
+
+
+/* COLUMN SIZES */
+.colItem {
+    width: 100%;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.colItem-6 {
+    max-width: 100%;
+}
+
+.colItem-5 {
+    max-width: 83.33%;
+}
+
+.colItem-4 {
+    max-width: 66.66%;
+}
+
+.colItem-3 {
+    max-width: 50%;
+}
+
+.colItem-2 {
+    max-width: 33.33%;
+}
+
+.colItem-1 {
+    max-width: 16.66%;
+}
+/* COLUMN SIZES */
+
+
+/* TEXTS */
+.textItem {
+    font-family: 'Be Vietnam';
+    font-size: 16px;
+    font-weight: 200;
+    color:	#9095a7;
+    width: 100%;
+    padding: 8px 0;
+    margin: 2px 0;
+}
+
+.headItem {
+    font-family: 'Be Vietnam Bold';
+    padding: 8px 0;
+    margin: 2px 0;
+    color: #242d52;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.h1Item h1 {
+    font-size: 40px;
+}
+
+.h2Item h2 {
+    font-size: 30px;
+}
+
+.h3Item h4 {
+    font-size: 20px;
+}
+/* TEXTS */
+
+
+/* IMAGES */
+.imgItem img {
+    width: 100%;
+    display: block;
+}
+/* IMAGES */
+
+
+/* BUTTONS */
+.btnItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    color: white;
+    background-color: #f25f3a;
+    border-radius: 50px;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.15);
+    font-family: 'Be Vietnam';
+    font-size: 13px;
+    font-weight: 600;
+}
+/* BUTTONS */
+
+
+/* HEADER */
+.navItem {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: #242d52;
+    margin: auto;
+}
+
+.navItem ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navItem ul li {
+    padding: 10px;
+}
+
+.logoImg {
+    width: 150px;
+}
+
+.headerBtn {
+    margin-right: 0;
+    margin-left: auto;
+}
+/* HEADER */
+
+
+/* SECTION 1 */
+.sect-1 .headItem {
+    width: 350px !important;
+}
+.sect-1 .paraItem {
+    width: 350px !important;
+    padding-bottom: 30px !important;
+}
+
+.illustImg {
+    width: 450px !important;
+}
+/* SECTION 1 */
+
+
+/* SECTION 2 */
+.sect-2 .colItem:nth-child(1) {
+    margin-top: 0 !important;
+}
+
+.sect-2 .headItem, .sect-2 .paraItem {
+    width: 350px !important;
+}
+
+.numItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Be Vietnam';
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: #f25f3a;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.numCol {
+    margin-top: 10px !important;
+    padding: 0  !important;
+}
+/* SECTION 2 */
+
+
+/* SECTION 3 */
+.sect-3 .colItem .imgItem, .sect-3 .colItem .headItem, .sect-3 .colItem .paraItem, .sect-3 .colItem .btnItem {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sect-3 .innerRowItem {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.sect-3 .innerRowItem .colItem {
+    background-color: 	#fafafa;
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.sect-3 .innerRowItem .colItem .imgItem {
+    margin-top: -40px;
+}
+
+.avatarImg {
+    width: 70px;
+}
+/* SECTION 3 */
+
+
+/* SECTION 4 */
+.sectFoot-1 {
+    background-color: #f25f3a;
+}
+
+.sectFoot-1 .headItem{
+    width: 350px !important;
+    color: white !important;
+}
+
+.sectFoot-1 .btnItem {
+    margin-right: 0;
+    margin-left: auto;
+    background-color: white !important;
+    color: #f25f3a !important;
+}
+/* SECTION 4 */
+
+
+/* SECTION 5 */
+.sectFoot-2 {
+    background-color: #1d1e25;
+}
+
+.sectFoot-2 .logoImg {
+    color: white !important;
+}
+/* SECTION 5 */
