@@ -1,0 +1,11 @@
+/* COLUMN SIZES */
+.colItem {
+    width: 100%;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.colItem-6, .colItem-5, .colItem-4, .colItem-3, .colItem-2, .colItem-1 {
+    max-width: 100%;
+}
+/* COLUMN SIZES */
