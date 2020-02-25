@@ -21,7 +21,7 @@ body, h1, h2, h3, h4 {
     display: flex;
     flex-direction: row;
     width: 100%;
-    max-width: 960px;
+    max-width: 1149px;
     margin: 0 auto;
 }
 
@@ -86,15 +86,15 @@ body, h1, h2, h3, h4 {
 }
 
 .h1Item h1 {
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .h2Item h2 {
-    font-size: 30px;
+    font-size: 35px;
 }
 
-.h3Item h4 {
-    font-size: 20px;
+.h4Item h4 {
+    font-size: 16px;
 }
 /* TEXTS */
 
@@ -109,39 +109,58 @@ body, h1, h2, h3, h4 {
 
 /* BUTTONS */
 .btnItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 140px;
     height: 40px;
-    color: white;
     background-color: #f25f3a;
     border-radius: 50px;
     box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.15);
     font-family: 'Be Vietnam';
     font-size: 13px;
     font-weight: 600;
+    text-align: center;
+}
+
+.btnItem a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnItem:hover {
+    opacity: 0.7;
 }
 /* BUTTONS */
 
 
 /* HEADER */
-.navItem {
+.headerItem .navItem {
     font-size: 14px !important;
     font-weight: 700 !important;
-    color: #242d52;
     margin: auto;
 }
 
-.navItem ul {
+.headerItem .navItem ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.navItem ul li {
+.headerItem .navItem ul li {
     padding: 10px;
+}
+
+.headerItem .navItem ul li a {
+    text-decoration: none;
+    color: #242d52;
+}
+
+.headerItem .navItem ul li a:hover {
+    color:	#9095a7;
 }
 
 .logoImg {
@@ -166,6 +185,19 @@ body, h1, h2, h3, h4 {
 
 .illustImg {
     width: 450px !important;
+}
+
+.sect-1 .colItem.colItem-3:nth-child(2):before {
+    content: '';
+    width: 100vh;
+    display: block;
+    background-image: url('../../resources/images/bg-tablet-pattern.svg');
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    height: 60vh;
+    background-position: 40% 120%;
+    z-index: -1;
 }
 /* SECTION 1 */
 
@@ -218,11 +250,30 @@ body, h1, h2, h3, h4 {
 }
 
 .sect-3 .innerRowItem .colItem .imgItem {
-    margin-top: -40px;
+    margin-top: -60px;
 }
 
 .avatarImg {
     width: 70px;
+}
+
+.sect-3 .h4Item.headItem {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.sect-3:before {
+    content: '';
+    width: 100vh;
+    display: block;
+    background-image: url(../../resources/images/bg-tablet-pattern.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-position: -450% 0%;
+    z-index: -1;
+    left: 0;
+    bottom: -70%;
 }
 /* SECTION 3 */
 
@@ -230,6 +281,10 @@ body, h1, h2, h3, h4 {
 /* SECTION 4 */
 .sectFoot-1 {
     background-color: #f25f3a;
+    background-image: url('../../resources/images/bg-simplify-section-desktop.svg');
+    background-size: 150vh;
+    background-repeat: no-repeat;
+    background-position: -250% 100%;
 }
 
 .sectFoot-1 .headItem{
@@ -241,6 +296,9 @@ body, h1, h2, h3, h4 {
     margin-right: 0;
     margin-left: auto;
     background-color: white !important;
+}
+
+.sectFoot-1 .btnItem a {
     color: #f25f3a !important;
 }
 /* SECTION 4 */
@@ -251,7 +309,66 @@ body, h1, h2, h3, h4 {
     background-color: #1d1e25;
 }
 
-.sectFoot-2 .logoImg {
-    color: white !important;
+.sectFoot-2 .colItem:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.socialIcons {
+    display: flex;
+    flex-direction: row;
+}
+
+.socialIcon.imgItem {
+    width: 25px;
+    margin: 6px;
+}
+
+.sectFoot-2 .colItem {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sectFoot-2 .navItem ul {
+    list-style-type: none;
+    color: white;
+    margin-top: 0;
+}
+
+.sectFoot-2 .navItem ul li {
+    padding: 6px 0;
+}
+
+.sectFoot-2 .textItem{
+    padding: 0;
+}
+
+.newsletterWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.newsletterWrapper .inputField {
+    width: 180px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: white;
+    margin-right: 10px;
+    font-size: 13px !important;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.newsletterWrapper .btnItem {
+    width: 70px;
+    height: 45px;
+}
+
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+
 /* SECTION 5 */
